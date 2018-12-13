@@ -45,8 +45,8 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
             let mail = MFMailComposeViewController()
             mail.mailComposeDelegate = self
             mail.setToRecipients(["xxx@xxx.xxx"]) // 宛先アドレス
-            mail.setSubject("お問い合わせ") // 件名
-            mail.setMessageBody("ここに本文が入ります。", isHTML: true) // 本文
+            mail.setSubject("") // 件名
+            mail.setMessageBody("テストです", isHTML: true) // 本文
             
             present(mail, animated: true, completion: nil)
         } else {
